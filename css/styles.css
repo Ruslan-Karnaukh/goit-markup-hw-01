@@ -29,7 +29,6 @@ button{
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.5px;  
-  /* в макеті написано letter-spacing: 3%; но в "%" воно не працює  */
 }
 .title-color{
     color: var(--hover-color);
