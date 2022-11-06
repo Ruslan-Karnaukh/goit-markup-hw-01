@@ -48,7 +48,7 @@ li{
     cursor: pointer;
 }
 .features-title{
-    font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase
@@ -58,16 +58,9 @@ li{
     letter-spacing: 0.03em;
     color: var(--paragraph-color);
 }
-.work-title{
-    font-weight: 700;
+.section-title{
     font-size: 36px;
     line-height: calc( 42 / 36);
-    letter-spacing: 0.03em;
-}
-.team-header{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42 / 36) ;
     letter-spacing: 0.03em;
 }
 .team-name{
@@ -87,11 +80,12 @@ li{
     color: var(--hover-color);
 }
 .nav-link{
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    color: var(--brand-color);
 }
 .menu-link{
-    color: var(--brand-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
 }
 .nav-link:hover, .nav-link:focus{
     color: var(--hover-color);
@@ -106,14 +100,12 @@ li{
     color: var(--paragraph-color);
 }
 .portfolio-title{
-    font-weight: 700;
     font-size: 18px;
     letter-spacing: 0.06em;
     color: var(--brand-color);
     line-height: 2;
 }
 .portfolio-text{
-    font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.03em;
     color: var(--paragraph-color);
