@@ -25,7 +25,7 @@ li{
     color: var(--brand-color);
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.7; 
+    line-height: calc(31 / 26); 
     letter-spacing: 0.03em;
 }
 .hero{
@@ -34,7 +34,7 @@ li{
 .text-hero{
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: calc(60 / 44);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--background-color);  
@@ -44,17 +44,17 @@ li{
     color: var(--background-color);
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: calc(30 / 16);
     cursor: pointer;
 }
 .features-title{
     font-size: 14px;
-    line-height: 1.14;
+    line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase
 }
 .features-text{
-    line-height: 1.7;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--paragraph-color);
 }
@@ -84,7 +84,7 @@ li{
 }
 .menu-link{
     font-weight: 500;
-    line-height: 1.14;
+    line-height: calc(16 / 14);
     letter-spacing: 0.03em;
 }
 .nav-link:hover, .nav-link:focus{
@@ -94,7 +94,7 @@ li{
     cursor: pointer;
     letter-spacing: 0.03em;
     font-size: 16px;
-    line-height: 1.7;  
+    line-height: calc(26 / 16);  
 }
 .contact-link{
     color: var(--paragraph-color);
@@ -103,13 +103,13 @@ li{
     font-size: 18px;
     letter-spacing: 0.06em;
     color: var(--brand-color);
-    line-height: 2;
+    line-height: calc(36 / 18);
 }
 .portfolio-text{
     font-size: 16px;
     letter-spacing: 0.03em;
     color: var(--paragraph-color);
-    line-height: 1.87;
+    line-height: calc(30 / 16);
 }
 
 /* footer */
@@ -130,13 +130,13 @@ li{
     color: var(--background-color);
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.7; 
+    line-height: calc(31 / 26); 
     letter-spacing: 0.03em;
 }
 .map-link, .footer-link{
     font-style: normal;
     letter-spacing: 0.03em;
-    line-height: 1.7;
+    line-height: calc(24 / 14);
 }
 .map-link{
     color: var(--background-color);
