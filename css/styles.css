@@ -30,7 +30,7 @@ li{
 .header{
     border-bottom: 1px solid #ECECEC;
 }
-.header-content{
+.header-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -190,9 +190,7 @@ li{
     text-align: center;
 }
 /*  Portfolio */
-.main-portfolio{
-    padding-top: 0;
-}
+
 .title-color{
     color: var(--hover-color);
 }
@@ -200,7 +198,6 @@ li{
 .filters{
     display: flex;
     justify-content: center;
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 .filters-list:not(:first-child){
@@ -276,7 +273,6 @@ li{
 .footer{
     background-color: #2F303A;
     padding-top: 60px;
-    padding-left: 180px;
     padding-bottom: 60px;
 }
 .title-footer{
