@@ -15,9 +15,9 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-content">
-        <nav class="nav header-content">
-          <a class="title-header header-content" href="./index.html"
+      <div class="header-container container">
+        <nav class="nav header-container">
+          <a class="title-header header-container" href="./index.html"
             ><span class="title-color">Web</span>Studio</a
           >
           <ul class="menu ">
@@ -50,7 +50,8 @@
     </header>
 
     <main class="main">
-      <section class="main-portfolio section">
+      <section class="section">
+        <div class="container">
         <h1 class="visually-hidden">Portfolio</h1>
         <ul class="filters">
           <li class="filters-list">
@@ -177,30 +178,33 @@
             <p class="portfolio-text">Додаток</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
 
     <footer class="footer">
+      <div class="container">
       <a class="title-footer" href="./index.html"
         ><span class="title-color">Web</span>Studio</a
       >
       <address>
-        <ul>
+        <ul class="footer-list">
           <li class="footer-map">
-            <a class="map-link" href="#"> м. Київ, пр-т Лесі Українки, 26</a>
+            <a class="map-link nav-link" href="#"> м. Київ, пр-т Лесі Українки, 26</a>
           </li>
           <li class="footer-list">
-            <a class="footer-link" href=" mailto:info@devstudio.com"
+            <a class="footer-link nav-link" href=" mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li class="footer-list">
-            <a class="footer-link" href="tel:+380961111111"
+            <a class="footer-link nav-link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
