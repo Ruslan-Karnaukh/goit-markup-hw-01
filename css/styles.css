@@ -32,13 +32,12 @@ li{
 }
 .header-container{
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 .menu, .contact{
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-left: auto;
 
 }
 .menu-list, .contact-list{
@@ -114,6 +113,10 @@ li{
 .container{
     width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+.features-section{
+    padding-bottom: 0;
 }
 .features-list{
     display: flex;
@@ -128,6 +131,9 @@ li{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+.features-items{
+    width: 270px;
 }
 .features-text{
     line-height: calc(24 / 14);
@@ -172,8 +178,11 @@ li{
     letter-spacing: 0.03em;
     text-align: center;
 }
-.team-name{
+.team-wraper{
     padding-top: 30px;
+    padding-bottom: 30px;
+}
+.team-name{
     padding-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -182,7 +191,6 @@ li{
     text-align: center;
 }
 .team-skills{
-    padding-bottom: 30px;
     font-size: 16px;
     line-height: calc(19 / 16);
     letter-spacing: 0.03em;
@@ -216,11 +224,10 @@ li{
 .portfolio{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 30px;
 }
 .portfolio-list{
-    margin-left: 30px;
-    margin-bottom: 30px;    
+    width: calc((100% - 60px) / 3);    
     border: 1px solid #EEEEEE;
 }
 .portfolio-list:nth-child(3n + 1){
@@ -236,6 +243,7 @@ li{
     line-height: calc(36 / 18);
     padding-left: 24px;
     padding-top: 20px;
+    margin-bottom: 4px;
 }
 .portfolio-text{
     font-size: 16px;
@@ -284,11 +292,11 @@ li{
     letter-spacing: 0.03em;
 }
 .footer-list{
-    padding-bottom: 9px;
+    flex-direction: column;
 }
+.footer-items,
 .footer-map{
-    padding-top: 20px;
-    padding-bottom: 9px;
+    padding-top: 9px;
 }
 .map-link, .footer-link{
     font-style: normal;
