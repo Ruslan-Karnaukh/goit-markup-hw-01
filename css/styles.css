@@ -80,7 +80,7 @@ img{
     height: 16px;
     margin-right: 4px;
 }
-.contact-icon:hover, 
+.contact-link:hover, 
 .contact-link:focus{
     fill: var(--hover-color);
 }
@@ -101,12 +101,11 @@ img{
 .hero{
     text-align: center;
     background-color: #2F303A;
+    background-image: linear-gradient(to top, #2F303A66 40%, #2F303A66 80% ), url(../images/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 200px 0;
-}
-.hero-section{ 
-   
-   
-      
 }
 .hero-title{
     font-weight: 900;
@@ -170,6 +169,8 @@ img{
 }
 
 .features-icon-block{
+    width: 100%;
+    height: 100%;
     padding: 25px 100px;
 }
 .features-icon{
@@ -418,3 +419,4 @@ img{
 }
 .footer-social-icon:hover{
     background-color: var(--hover-color);
+}
