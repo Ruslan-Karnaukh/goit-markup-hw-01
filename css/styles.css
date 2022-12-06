@@ -72,17 +72,14 @@ img{
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     padding: 32px 0;
-    display: block;  
-    width: 170px;
+    display: flex;
+    align-items: center;
 }
 .contact-icon{
     width: 18px;
     height: 16px;
     margin-right: 4px;
-}
-.contact-link:hover, 
-.contact-link:focus{
-    fill: var(--hover-color);
+    fill: currentColor;
 }
 .title-header{
     font-family: 'Raleway', sans-serif;
@@ -101,11 +98,13 @@ img{
 .hero{
     text-align: center;
     background-color: #2F303A;
-    background-image: linear-gradient(to top, #2F303A66 40%, #2F303A66 80% ), url(../images/hero-img.jpg);
+    background-image: linear-gradient(to top, #2F303A66 100%, #2F303A66 100% ), url(../images/hero-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 200px 0;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .hero-title{
     font-weight: 900;
@@ -162,16 +161,17 @@ img{
 .features-block{
     width: 270px;
     height: 120px;
-    /* display: flex;  */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
     background-color: #F5F4FA; 
     border-radius: 4px;
     margin-bottom: 30px;
 }
 
 .features-icon-block{
-    width: 100%;
-    height: 100%;
-    padding: 25px 100px;
+    width: 70px;
+    height: 70px
 }
 .features-icon{
 
@@ -243,45 +243,57 @@ img{
     margin-top: 16px;
 }
 .social-items{
-    width: 44px;
-    height: 44px;
+  
 }
 .social-items:not(:last-child){
     margin-right: 10px;
 }
-.social-icon{
+.social-link{
     fill: var(--icon-color);
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
-.social-icon:hover{
+.social-link:hover{
     fill: #fff;
     background-color: var(--hover-color);
     border-radius: 50%;
+}
+.social-icon{
+    width: 44px;
+    height: 44px;
 }
 .client-list{
     display: flex;
     justify-content: space-between;
 }
 .client-items{
-    width: 170px;
-    height: 92px;
+    
+
+}
+.client-link{
+    width: 100%;
+    height: 100%;
     border: 1px solid var(--icon-color);
+    padding: 16px 32px;
+    fill: var(--icon-color);
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .client-icon-block{
-    fill: var(--icon-color);
-    width: 100%;
-    height: 100%;
-    padding: 16px 32px;
+   
+    width: 106px;
+    height: 60px;
 }
-.client-items:hover{
+.client-link:hover{
+    fill: var(--hover-color);
     border-color:  var(--hover-color);
 }
-.client-icon-block:hover{
-    fill: var(--hover-color);
-}
+
 /*  Portfolio */
 
 .title-color{
@@ -411,8 +423,8 @@ img{
     text-transform: uppercase;
 }
 .footer-social-icon{
-    width: 100%;
-    height: 100%;
+    width: 44px;
+    height: 44px;
     fill: #fff;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
