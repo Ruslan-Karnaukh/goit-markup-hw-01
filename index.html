@@ -69,12 +69,18 @@
       
     </header>
     <main>
-        <section class="hero section">
+      <section class="hero section">
         <div class="container">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button-hero" type="button">Замовити послугу</button>
-      </div>
-        </section>
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <div class="modal-btn is-hidden" data-modal >
+            <div class="modal-window " >
+              <button class="modal-close" type="button" data-modal-close>X</button>
+            </div>
+          </div>
+          <button class="button-hero" type="button" data-modal-open>Замовити послугу</button>
+      
+    </div>
+      </section>
         <section class="features-section section">
           <div class="container">
             <h2 class="visually-hidden">Особливості</h2>
@@ -85,7 +91,7 @@
                   <use class="features-icon" href="./images/icons.svg#icon-antenna"></use>
                 </svg>  
               </div>
-              <h3 class="features-title ">УВАГА ДО ДЕТАЛЕЙ</h2>
+              <h3 class="features-title ">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="features-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
@@ -97,7 +103,7 @@
                   <use class="features-icon" href="./images/icons.svg#icon-clock"></use>
                 </svg> 
               </div>
-              <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h2>
+              <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="features-text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне
                 у себе.
@@ -108,7 +114,7 @@
                 <use class="features-icon" href="./images/icons.svg#icon-diagram"></use>
               </svg> 
             </div>
-              <h3 class="features-title">ПЛАНУВАННЯ</h2>
+              <h3 class="features-title">ПЛАНУВАННЯ</h3>
               <p class="features-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
@@ -118,7 +124,7 @@
                 <use class="features-icon" href="./images/icons.svg#icon-astronaut"></use>
               </svg> 
             </div>
-              <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+              <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="features-text">
                 Значимість цих проблем настільки очевидна, що реалізація планових
                 завдань.
@@ -133,6 +139,7 @@
           <ul class="work-list">
             <li class="work-items">
               <img src="./images/1.jpg" alt="друкуєм" width="370" height="294" />
+              <p class="work-lable work-lable-position">Десктопні додатки</p>
             </li>
             <li class="work-items">
               <img
@@ -141,6 +148,7 @@
                 width="370"
                 height="294"
               />
+              <p class="work-lable work-lable-position">Мобільні додатки</p>
             </li>
             <li class="work-items">
               <img
@@ -149,6 +157,7 @@
                 width="370"
                 height="294"
               />
+              <p class="work-lable work-lable-position">Дизайнерські рішення</p>
             </li>
           </ul>
           </div>
@@ -413,7 +422,7 @@
     </main>
     <footer class="footer">
       <div class="footer-flex container">
-        <div class="footer-block ">
+        <div class="footer-block">
           <a class="title-footer" href="./index.html"
             ><span class="title-color">Web</span>Studio</a
           >
@@ -442,7 +451,7 @@
             <li class="social-items">
               <a class="social-link" href="">
               <svg class="footer-social-icon"> 
-                <use href="./images/icons.svg#icon-instagram" >
+                <use href="./images/icons.svg#icon-instagram" width="44" height="44">
 
               </use>
             </svg>
@@ -451,7 +460,7 @@
             <li class="social-items">
               <a class="social-link" href="">
               <svg class="footer-social-icon"> 
-                <use href="./images/icons.svg#icon-twiter">
+                <use href="./images/icons.svg#icon-twiter" width="44" height="44">
 
               </use>
             </svg>
@@ -460,7 +469,7 @@
             <li class="social-items">
               <a class="social-link" href="">
               <svg class="footer-social-icon"> 
-                <use href="./images/icons.svg#icon-facebock" >
+                <use href="./images/icons.svg#icon-facebock" width="44" height="44">
 
               </use>
             </svg>
@@ -469,7 +478,7 @@
             <li class="social-items">
               <a class="social-link" href="">
               <svg class="footer-social-icon"> 
-                <use href="./images/icons.svg#icon-in">
+                <use href="./images/icons.svg#icon-in" width="44" height="44">
 
               </use>
             </svg>
@@ -479,5 +488,6 @@
           </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
