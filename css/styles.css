@@ -302,7 +302,7 @@ img{
     background-size: contain;
     background-color: var(--hover-color);
     border-color: var(--hover-color);
-    background-origin:content-box;
+    background-origin: border-box;
 }
 .checkbox-text{
     font-family: inherit;
