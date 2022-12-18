@@ -171,10 +171,10 @@ img{
     position: absolute;
     top: 50%;
     left: 50%;
+    padding: 40px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 558px;
-    height: 581px;
     background-color: var(--background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
@@ -195,16 +195,19 @@ img{
     background-color: var(--background-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close:hover{
-    color: var(--hover-color);
+.modal-close-icon{
+    width: 18px;
+    height: 18px;
+}
+.modal-close:hover,
+.modal-close:focus{
+    fill: var(--hover-color);
 }
 
 .registration-block{
-    width: 448px;
-    margin: 0 auto;
+    
 }
 .registration-title{
-    margin-top: 51px;
     margin-bottom: 12px;
     font-family: inherit;
     font-size: 20px;
@@ -213,7 +216,6 @@ img{
     letter-spacing: 0.03em;
 }
 .lable-block{
-    width: 100%;
     margin-bottom: 10px;
 }
 .form-input{
@@ -258,14 +260,15 @@ img{
 .icon-tel, 
 .icon-email{
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 14px;
-    transform: translateY(-80%);
+    transform: translateY(-75%);
 }
 .lable-block-textarea{
-    width: 100%;
+    margin-bottom: 20px;
 }
 .form-textarea{
+    display: block;
     width: 100%;
     height: 120px;
     border: 1px solid #21212133;
@@ -277,6 +280,11 @@ img{
 }
 .checkbox-icon + .checkbox-text {
     padding-left: 7px;
+}
+.lable-checkbox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 .form-lable-checkbox{
     display: flex;
@@ -321,7 +329,6 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
 }
 .form-button{
     padding: 10px 52px;
@@ -751,6 +758,7 @@ img{
 }
 .input-subscription:focus{
     outline: 1px solid var(--hover-color);
+    color:var(--background-color)
 }
 .input-block{
     display: inline-flex;

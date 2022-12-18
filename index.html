@@ -498,6 +498,11 @@
     </footer>
     <div class="beack-drop is-hidden" data-modal >
       <div class="modal-window " >
+        <button class="modal-close" type="button" data-modal-close>
+          <svg class="modal-close-icon">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
         <div class="registration-block">
           <h2 class="registration-title">Залиште свої дані, ми вам передзвонимо</h2>
           <form name="registration">
@@ -534,7 +539,7 @@
             <textarea class="form-textarea" name="form-registration" placeholder="Введіть текст" id="comment"></textarea>
           </div>
 
-          <div class="lable-block form-checkbox">
+          <div class="lable-block lable-checkbox">
             
            
             <label class="form-lable-checkbox" for="checkbox">
@@ -554,7 +559,7 @@
             </div>
           </form>
         </div>
-        <button class="modal-close" type="button" data-modal-close>X</button>
+        
       </div>
     </div>
     <script src="./js/modal.js"></script>
